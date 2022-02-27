@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background_danhbai"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/timer"
+        android:textColor="#EF6C00"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterMinutes" />
+
+    <ImageView
+        android:id="@+id/imageView1_nguoi"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <ImageView
+        android:id="@+id/imageView1_may"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <ImageView
+        android:id="@+id/imageView2_nguoi"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1_nguoi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <ImageView
+        android:id="@+id/imageView2_may"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView1_may"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <ImageView
+        android:id="@+id/imageView3_nguoi"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2_nguoi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <ImageView
+        android:id="@+id/imageView3_may"
+        android:layout_width="80dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2_may"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        app:srcCompat="@drawable/matlunglabai" />
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Người chơi"
+        android:textColor="#ED1C1C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imagePlayer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:text="Người chơi"
+        android:textColor="#ED1C1C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLanThang_nguoi"
+        app:layout_constraintStart_toEndOf="@+id/imagePlayer3" />
+
+    <TextView
+        android:id="@+id/textViewMayChoi"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="12dp"
+        android:text="Máy"
+        android:textColor="#ED1C1C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView1_may"
+        app:layout_constraintStart_toStartOf="@+id/imageMayChoi" />
+
+    <TextView
+        android:id="@+id/textViewMayChoi2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginBottom="24dp"
+        android:text="Máy"
+        android:textColor="#ED1C1C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLanThang_may"
+        app:layout_constraintStart_toStartOf="@+id/imageMayChoi" />
+
+    <TextView
+        android:id="@+id/textViewKetQua_nguoi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:text="Kết Quả :"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2_nguoi" />
+
+    <TextView
+        android:id="@+id/textViewKetQua_may"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Kết Quả :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2_may"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imagePlayer"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageMayChoi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_user_40px" />
+
+    <ImageView
+        android:id="@+id/imagePlayer2"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePlayer3"
+        app:srcCompat="@drawable/icons8_user_40px" />
+
+    <ImageView
+        android:id="@+id/imagePlayer3"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_user_40px" />
+
+    <ImageView
+        android:id="@+id/imageMayChoi"
+        android:layout_width="47dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="480dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView1_may"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/iconmay" />
+
+    <ImageView
+        android:id="@+id/imageMayChoi2"
+        android:layout_width="43dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLanThang_may"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconmay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SỐ LẦN THẮNG"
+        android:textColor="#F40000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/startTimer"
+        app:layout_constraintVertical_bias="0.978"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="31dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="|"
+        android:textColor="#000000"
+        android:textSize="140sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2_may"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <TextView
+        android:id="@+id/textViewLanThang_nguoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="16dp"
+        android:text="2"
+        android:textColor="#D84315"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMayChoi"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLanThang_may"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="2"
+        android:textColor="#D84315"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMayChoi"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/enterMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="nhập số phút"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#090908"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKetQua_nguoi"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/resetTimer"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:text="Reset time"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimer"
+        app:layout_constraintVertical_bias="0.0"
+        tools:backgroundTint="#F40202" />
+
+    <Button
+        android:id="@+id/startTimer"
+        android:layout_width="133dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F6030B"
+        android:text="@string/start_timer"
+        android:textColorHint="#EC0909"
+        app:layout_constraintStart_toEndOf="@+id/enterMinutes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKetQua_nguoi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
